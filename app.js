@@ -3,6 +3,7 @@ var arrayAscii=[];
 var arrayInt=[];
 var valueAscii;
 var sumTotal=0;
+var auxAscii;
 
 function isValidCard (value){
 auxStr='';
@@ -13,7 +14,7 @@ do{
        alert( 'RECUERDA DEBES INGRESAR 16 DIGITOS ');
     }else{
       for(var i=0; i< value.length; i++){
-         var auxAscii= value.charCodeAt(i);
+        auxAscii=value.charCodeAt(i);
          if(auxAscii>= 48 && auxAscii<=57){
           arrayAscii.push(auxAscii);
            // console.log(arrayAscii);
